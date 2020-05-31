@@ -46,7 +46,7 @@ export default {
 
   axios: {
     // 自分のfirebaseアカウントを設定
-    baseURL: 'https://nuxt-blog-service-d0c1f.firebaseio.com'
+    baseURL: 'https://fukuoka-28ec9.firebaseio.com'
   },
   /*
   ** Build configuration
