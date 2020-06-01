@@ -19,8 +19,8 @@ jobs:
         run: yarn --frozen-lockfile
       - name: Build
         run: |
-          yarn build
-          yarn generate
+          yarn build:gh-pages
+          yarn generate:gh-pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

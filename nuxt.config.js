@@ -1,4 +1,10 @@
 
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/i-love-fukuoka/'
+  }
+} : {}
+
 export default {
   mode: 'universal',
   srcDir: 'app',
@@ -20,8 +26,6 @@ export default {
   ** Customize the progress-bar color
   */
   loading: { color: '#fff' },
-
-  router: { base: '/i-love-fukuoka/' },
   /*
   ** Global CSS
   */
@@ -57,5 +61,7 @@ export default {
     */
     extend(config, ctx) {
     }
-  }
+  },
+
+  ...routerBase
 }
